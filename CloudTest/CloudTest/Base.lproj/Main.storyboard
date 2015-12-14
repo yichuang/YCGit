@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKO-RK-H62" userLabel="TestContro">
+                                <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PNo-7P-ghO">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dTb-x1-VCm">
+                                        <rect key="frame" x="73" y="58" width="454" height="295"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dTb-x1-VCm" secondAttribute="bottom" constant="10" id="8VN-1F-Sce"/>
+                                    <constraint firstItem="PNo-7P-ghO" firstAttribute="top" secondItem="tKO-RK-H62" secondAttribute="top" constant="10" id="NGD-bj-250"/>
+                                    <constraint firstItem="dTb-x1-VCm" firstAttribute="centerX" secondItem="tKO-RK-H62" secondAttribute="centerX" id="ftl-oB-1tH"/>
+                                    <constraint firstItem="PNo-7P-ghO" firstAttribute="centerX" secondItem="tKO-RK-H62" secondAttribute="centerX" id="kUh-ET-Amx"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="iBS-o1-zkP">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tKO-RK-H62" secondAttribute="bottom" id="1L7-qZ-lYZ"/>
+                            <constraint firstItem="iBS-o1-zkP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DhY-Pb-cyO"/>
+                            <constraint firstItem="iBS-o1-zkP" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Far-bx-nRV"/>
+                            <constraint firstItem="tKO-RK-H62" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fc6-hz-cVv"/>
+                            <constraint firstItem="iBS-o1-zkP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="L3l-Ow-B4p"/>
+                            <constraint firstItem="tKO-RK-H62" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q2O-96-dN4"/>
+                            <constraint firstAttribute="trailing" secondItem="tKO-RK-H62" secondAttribute="trailing" id="kWy-cQ-rpN"/>
+                            <constraint firstItem="tKO-RK-H62" firstAttribute="top" secondItem="iBS-o1-zkP" secondAttribute="bottom" constant="20" id="pM8-FE-eyt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="300" height="197"/>
+    </resources>
+</document>
